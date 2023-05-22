@@ -1,0 +1,97 @@
+html{
+    user-select: none;
+}
+body{
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1{
+    font-size: larger;
+    margin: 0%;
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(1,0,0,1)
+
+}
+@keyframes h1{
+    from{transform: skew(-35deg);}
+    to{transform:skew(35deg) ;}
+}
+#board{
+    margin-top: 10px;
+    height: 100vh;
+    font-family: 'Pangolin', cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    color:  #be4883;
+    
+}
+
+table{
+    background-color: #be4883;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+td{
+    border: 2px solid aliceblue ;
+    margin: 0px;
+    font-family: 'Pangolin', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 120px;
+    width:120px;
+    
+   
+    
+    
+}
+#text{
+    font-size: 30px;
+    margin: 15px;
+    animation-name: text;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes text{
+    from{font-size: 10px;}
+    to{font-size: 30px;}
+}
+.box:hover{
+    background-color: #222222;
+    color: #be4883;
+    
+}
+.restartbtn:hover{
+    background-color:#be4883; 
+    color: aliceblue;;
+    
+}
+
+.restartbtn{
+    border: 8px solid #be4883 ;
+    color: #be4883;
+    font-family: 'Pangolin', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: lowercase;
+    width: 101%;
+    letter-spacing: 5px;
+    border-radius: 100px;
+    cursor:pointer;
+    width: fit-content;
+}

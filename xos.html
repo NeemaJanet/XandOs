@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>X&O</title>
+</head>
+<body id="board">
+    <h1>X's and O's</h1>
+    <div>
+        <table >
+         <tbody>   
+            <tr>
+                <td class="box" cellIndex="0" onclick="startGame(0)"></td>
+                <td class="box" cellIndex="1" onclick="startGame(1)"></td>
+                <td class="box" cellIndex="2" onclick="startGame(2)"></td>
+            </tr>
+            <tr>
+                <td class="box" cellIndex="3" onclick="startGame(3)"></td>
+                <td class="box" cellIndex="4" onclick="startGame(4)"></td>
+                <td class="box" cellIndex="5" onclick="startGame(5)"></td>
+            </tr> 
+            <tr>
+                <td class="box" cellIndex="6" onclick="startGame(6)"></td>
+                <td class="box" cellIndex="7" onclick="startGame(7)"></td>
+                <td class="box" cellIndex="8" onclick="startGame(8)"></td>
+            </tr>
+            <div class="strike" id="strike" id="strike"></div>
+         </tbody>   
+        </table>
+        <div id="text"></div>
+        <button  class="restartbtn" id="restartbtn">Restart</button>
+    </div>
+<script type="text/javascript" src="xos.js"></script>    
+</body>
+</html>
